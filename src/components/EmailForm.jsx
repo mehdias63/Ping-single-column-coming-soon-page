@@ -55,7 +55,7 @@ function EmailForm() {
         </div>
         <div>
           <button
-            className="w-full rounded-full px-24 md:px-12 py-3 bg-blue text-white mb-4 shadow-[0_5px_10px_2px_rgba(76,123,243,0.23)] hover:opacity-80 font-semibold"
+            className="w-full rounded-full px-24 md:px-10 py-3 bg-blue text-white mb-4 shadow-[0_5px_10px_2px_rgba(76,123,243,0.23)] hover:opacity-80 font-semibold"
             type="submit"
           >
             Notify Me
