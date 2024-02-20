@@ -31,19 +31,36 @@ function EmailForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className="">
-        <input
-          type="email"
-          value={email}
-          onChange={handleInputChange}
-          placeholder="Email Address"
-          className={`w-full rounded-full placeholder:opacity-50 px-6 py-3 border-2 ${
-            error ? "border-red-500" : "border-blue-400"
-          }`}
-        />
-        {error && <div style={{ color: "red" }}>{error}</div>}
-        {success && <div style={{ color: "green" }}>{success}</div>}
-        <button className="">Notify Me</button>
+      <div className="w-full flex flex-col md:flex-row gap-5">
+        <div>
+          <input
+            type="email"
+            value={email}
+            onChange={handleInputChange}
+            placeholder="Your email address…"
+            className={`rounded-full placeholder:opacity-50 px-10 md:px-6 py-3 border-2 border-light-blue ${
+              error ? "border-red" : ""
+            }`}
+          />
+          {error && (
+            <div className="text-centet text-xs italic mt-3 ml-6 mb-8 text-red">
+              {error}
+            </div>
+          )}
+          {success && (
+            <div className="text-centet text-xs italic mt-3 ml-12 md:ml-6 text-green-500">
+              {success}
+            </div>
+          )}
+        </div>
+        <div>
+          <button
+            className="w-full rounded-full px-24 md:px-12 py-3 bg-blue text-white mb-4 shadow-[0_5px_10px_2px_rgba(76,123,243,0.23)] hover:opacity-80 font-semibold"
+            type="submit"
+          >
+            Notify Me
+          </button>
+        </div>
       </div>
     </form>
   );

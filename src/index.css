@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .a-link {
+    @apply text-blue border-[1px] border-light-blue rounded-full p-2 cursor-pointer hover:bg-blue hover:text-white;
+  }
+}

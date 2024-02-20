@@ -3,14 +3,15 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      pop: ["Poppins"],
+      libre: ["Libre Franklin"],
     },
     extend: {
       colors: {
-        pink: "#FF7979",
-        green: "#38CC8B",
-        purple: "#5E54A4",
-        gray: "#BAB7D4",
+        "black": "#15202A",
+        "blue": "#4C7BF3",
+        "light-blue": "#C2D3FF",
+        "gray": "#969696",
+        "red": "#FF5466",
       },
     },
   },
